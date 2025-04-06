@@ -8,6 +8,7 @@ import { LocaleContext } from "@/contexts/LocaleContext";
 import { i18n, type Locale } from "@/i18n";
 import dataEn from "./data-en";
 import dataPl from "./data-pl";
+import dataEs from "./data-es";
 import { logOnIncorrect } from "@components/TestApp/logOnIncorrect";
 
 const Reasoning = (props: TestProps) => {
@@ -67,7 +68,7 @@ const Reasoning = (props: TestProps) => {
 export default Reasoning;
 
 function generateQuestion(locale: Locale) {
-  const data = locale === "pl" ? dataPl : dataEn;
+  const data = locale !== "pl" ? (locale !== "es" ? dataEn : dataEs) : dataPl;
   const { names, comparisons, question: questionStart } = data;
 
   const comparison = pickRandom(comparisons);
