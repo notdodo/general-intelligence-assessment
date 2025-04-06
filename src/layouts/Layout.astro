@@ -4,6 +4,7 @@ import {
   getLocale,
   LOCALES,
   SWITCH_LOCALE_LABELS,
+  i18n,
 } from "@/i18n";
 import Link from "@components/Link.astro";
 import "@styles/global.css";
@@ -24,6 +25,7 @@ const title =
 
 const locale = getLocale(Astro.url);
 const delocalizedPath = delocalizePath(Astro.url);
+const t = i18n(locale, "layout");
 ---
 
 <!doctype html>
@@ -66,7 +68,7 @@ const delocalizedPath = delocalizePath(Astro.url);
       <slot />
     </main>
     <footer class="mt-8 p-2 text-center">
-      <span id="footer-year">Made by </span>
+      <span id="footer-year">{t("made-by")}</span>
       <Link href="https://steciuk.dev" targetBlank> Adam Steciuk </Link>
     </footer>
   </body>

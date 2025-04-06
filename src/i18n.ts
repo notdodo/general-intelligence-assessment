@@ -255,6 +255,13 @@ const ui = {
       es: "Puntuación",
     },
   },
+  layout: {
+    "made-by": {
+      en: "Made by",
+      pl: "Wykonane przez",
+      es: "Hecho por",
+    },
+  },
 } as const satisfies {
   [namespace: string]: { [key: string]: { [locale in Locale]: string } };
 };
