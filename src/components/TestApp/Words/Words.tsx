@@ -5,6 +5,7 @@ import { TestName, type TestProps } from "@components/TestApp/types";
 import { Card, CardHeader, CardTitle, CardFooter } from "@components/ui/card";
 import { categories as categoriesEn } from "./data-en";
 import { categories as categoriesPl } from "./data-pl";
+import { categories as categoriesEs } from "./data-es";
 import React, { useContext } from "react";
 import { LocaleContext } from "@/contexts/LocaleContext";
 import { i18n, type Locale } from "@/i18n";
@@ -58,7 +59,12 @@ const Words = (props: TestProps) => {
 export default Words;
 
 function generateQuestion(locale: Locale) {
-  const categories = locale === "pl" ? categoriesPl : categoriesEn;
+  const categories =
+    locale !== "pl"
+      ? locale !== "es"
+        ? categoriesEn
+        : categoriesEs
+      : categoriesPl;
 
   const [matching, odd] = chooseRandom(categories, 2, true);
   const matchingWords = chooseRandom(matching, 2, true);
