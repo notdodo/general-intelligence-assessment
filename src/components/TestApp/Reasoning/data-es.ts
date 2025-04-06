@@ -218,12 +218,12 @@ const comparisons = [
   },
   {
     s: [
-      ["es más ambicioso(-a) que", "no es tan perezoso(-a) como"],
-      ["es más perezoso(-a) que", "no es tan ambicioso(-a) como"],
+      ["es más activo(-a) que", "no es tan perezoso(-a) como"],
+      ["es más perezoso(-a) que", "no es tan activo(-a) como"],
     ],
     q: [
-      ["más ambicioso(-a)", "menos perezoso(-a)"],
-      ["más perezoso(-a)", "menos ambicioso(-a)"],
+      ["más activo(-a)", "menos perezoso(-a)"],
+      ["más perezoso(-a)", "menos activo(-a)"],
     ],
   },
   {
@@ -248,32 +248,32 @@ const comparisons = [
   },
   {
     s: [
-      ["es más creativo(-a) que", "no es tan poco imaginativo(-a) como"],
-      ["es más poco imaginativo(-a) que", "no es tan creativo(-a) como"],
+      ["es más innovador(-a) que", "no es tan conservador(-a) como"],
+      ["es más conservador(-a) que", "no es tan innovador(-a) como"],
     ],
     q: [
-      ["más creativo(-a)", "menos poco imaginativo(-a)"],
-      ["más poco imaginativo(-a)", "menos creativo(-a)"],
+      ["más innovador(-a)", "menos conservador(-a)"],
+      ["más conservador(-a)", "menos innovador(-a)"],
     ],
   },
   {
     s: [
-      ["es más disciplinado(-a) que", "no es tan imprudente como"],
-      ["es más imprudente que", "no es tan disciplinado(-a) como"],
+      ["es más disciplinado(-a) que", "no es tan caótico como"],
+      ["es más caótico que", "no es tan disciplinado(-a) como"],
     ],
     q: [
-      ["más disciplinado(-a)", "menos imprudente"],
-      ["más imprudente", "menos disciplinado(-a)"],
+      ["más disciplinado(-a)", "menos caótico"],
+      ["más caótico", "menos disciplinado(-a)"],
     ],
   },
   {
     s: [
-      ["es más atractivo(-a) que", "no es tan poco atractivo(-a) como"],
-      ["es más poco atractivo(-a) que", "no es tan atractivo(-a) como"],
+      ["es más atractivo(-a) que", "no es tan feo(-a) como"],
+      ["es más feo(-a) que", "no es tan atractivo(-a) como"],
     ],
     q: [
-      ["más atractivo(-a)", "menos poco atractivo(-a)"],
-      ["más poco atractivo(-a)", "menos atractivo(-a)"],
+      ["más atractivo(-a)", "menos feo(-a)"],
+      ["más feo(-a)", "menos atractivo(-a)"],
     ],
   },
   {
@@ -298,15 +298,12 @@ const comparisons = [
   },
   {
     s: [
-      ["es más de mente abierta que", "no es tan cerrado(-a) de mente como"],
-      [
-        "es más cerrado(-a) de mente que",
-        "no es tan abierto(-a) de mente como",
-      ],
+      ["es abierto(-a) que", "no es tan cerrado(-a) como"],
+      ["es más cerrado(-a) que", "no es tan abierto(-a) como"],
     ],
     q: [
-      ["más de mente abierta", "menos cerrado(-a) de mente"],
-      ["más cerrado(-a) de mente", "menos abierto(-a) de mente"],
+      ["más abierto(-a)", "menos cerrado(-a)"],
+      ["más cerrado(-a)", "menos abierto(-a)"],
     ],
   },
   {
@@ -371,22 +368,22 @@ const comparisons = [
   },
   {
     s: [
-      ["es más carismático(-a) que", "no es tan aburrido(-a) como"],
-      ["es más aburrido(-a) que", "no es tan carismático(-a) como"],
+      ["es más divertido(-a) que", "no es tan aburrido(-a) como"],
+      ["es más aburrido(-a) que", "no es tan divertido(-a) como"],
     ],
     q: [
-      ["más carismático(-a)", "menos aburrido(-a)"],
-      ["más aburrido(-a)", "menos carismático(-a)"],
+      ["más divertido(-a)", "menos aburrido(-a)"],
+      ["más aburrido(-a)", "menos divertido(-a)"],
     ],
   },
   {
     s: [
-      ["es más confiable que", "no es tan poco fiable como"],
-      ["es más poco fiable que", "no es tan confiable como"],
+      ["es más fiable que", "no es tan dudoso como"],
+      ["es más dudoso que", "no es tan fiable como"],
     ],
     q: [
-      ["más confiable", "menos poco fiable"],
-      ["más poco fiable", "menos confiable"],
+      ["más fiable", "menos dudoso"],
+      ["más dudoso", "menos fiable"],
     ],
   },
   {
@@ -451,12 +448,12 @@ const comparisons = [
   },
   {
     s: [
-      ["es más confiable que", "no es tan inconsistente como"],
-      ["es más inconsistente que", "no es tan confiable como"],
+      ["es más constante que", "no es tan inconsistente como"],
+      ["es más inconsistente que", "no es tan constante como"],
     ],
     q: [
-      ["más confiable", "menos inconsistente"],
-      ["más inconsistente", "menos confiable"],
+      ["más constante", "menos inconsistente"],
+      ["más inconsistente", "menos constante"],
     ],
   },
   {
@@ -471,12 +468,12 @@ const comparisons = [
   },
   {
     s: [
-      ["es más sincero(-a) que", "no es tan insincero(-a) como"],
-      ["es más insincero(-a) que", "no es tan sincero(-a) como"],
+      ["es más sincero(-a) que", "no es tan mentiroso(-a) como"],
+      ["es más mentiroso(-a) que", "no es tan sincero(-a) como"],
     ],
     q: [
-      ["más sincero(-a)", "menos insincero(-a)"],
-      ["más insincero(-a)", "menos sincero(-a)"],
+      ["más sincero(-a)", "menos mentiroso(-a)"],
+      ["más mentiroso(-a)", "menos sincero(-a)"],
     ],
   },
   {
@@ -531,12 +528,12 @@ const comparisons = [
   },
   {
     s: [
-      ["es más respetuoso(-a) que", "no es tan irrespetuoso(-a) como"],
-      ["es más irrespetuoso(-a) que", "no es tan respetuoso(-a) como"],
+      ["es más respetuoso(-a) que", "no es tan grosero(-a) como"],
+      ["es más grosero(-a) que", "no es tan respetuoso(-a) como"],
     ],
     q: [
-      ["más respetuoso(-a)", "menos irrespetuoso(-a)"],
-      ["más irrespetuoso(-a)", "menos respetuoso(-a)"],
+      ["más respetuoso(-a)", "menos grosero(-a)"],
+      ["más grosero(-a)", "menos respetuoso(-a)"],
     ],
   },
   {
@@ -551,22 +548,22 @@ const comparisons = [
   },
   {
     s: [
-      ["es más ingenioso(-a) que", "no es tan derrochador(-a) como"],
-      ["es más derrochador(-a) que", "no es tan ingenioso(-a) como"],
+      ["es más ingenioso(-a) que", "no es tan necio(-a) como"],
+      ["es más necio(-a) que", "no es tan ingenioso(-a) como"],
     ],
     q: [
-      ["más ingenioso(-a)", "menos derrochador(-a)"],
-      ["más derrochador(-a)", "menos ingenioso(-a)"],
+      ["más ingenioso(-a)", "menos necio(-a)"],
+      ["más necio(-a)", "menos ingenioso(-a)"],
     ],
   },
   {
     s: [
-      ["es más persuasivo(-a) que", "no es tan poco convincente como"],
-      ["es más poco convincente que", "no es tan persuasivo(-a) como"],
+      ["es más desconfiado(-a) que", "no es tan ingenuo(-a) como"],
+      ["es más ingenuo(-a) que", "no es tan desconfiado(-a) como"],
     ],
     q: [
-      ["más persuasivo(-a)", "menos poco convincente"],
-      ["más poco convincente", "menos persuasivo(-a)"],
+      ["más desconfiado(-a)", "menos ingenuo(-a)"],
+      ["más ingenuo(-a)", "menos desconfiado(-a)"],
     ],
   },
   {
@@ -641,12 +638,12 @@ const comparisons = [
   },
   {
     s: [
-      ["es más cooperativo(-a) que", "no es tan poco cooperativo(-a) como"],
-      ["es más poco cooperativo(-a) que", "no es tan cooperativo(-a) como"],
+      ["es más cooperativo(-a) que", "no es tan individualista(-a) como"],
+      ["es más individualista(-a) que", "no es tan cooperativo(-a) como"],
     ],
     q: [
-      ["más cooperativo(-a)", "menos poco cooperativo(-a)"],
-      ["más poco cooperativo(-a)", "menos cooperativo(-a)"],
+      ["más cooperativo(-a)", "menos individualista(-a)"],
+      ["más individualista(-a)", "menos cooperativo(-a)"],
     ],
   },
   {
@@ -671,12 +668,12 @@ const comparisons = [
   },
   {
     s: [
-      ["es más confiable que", "no es tan poco confiable como"],
-      ["es más poco confiable que", "no es tan confiable como"],
+      ["es más confiable que", "no es tan sospechoso como"],
+      ["es más sospechoso que", "no es tan confiable como"],
     ],
     q: [
-      ["más confiable", "menos poco confiable"],
-      ["más poco confiable", "menos confiable"],
+      ["más confiable", "menos sospechoso"],
+      ["más sospechoso", "menos confiable"],
     ],
   },
   {
