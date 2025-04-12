@@ -64,7 +64,10 @@ const Test = (props: {
       {testState === "in-progress" && (
         <Progress value={(time / MAX_TIME) * 100} reverse />
       )}
-      <div className="test-container transition-shadow" ref={testContainerRef}>
+      <div
+        className="test-container rounded-xl transition-shadow"
+        ref={testContainerRef}
+      >
         {props.children({
           onCorrectAnswer,
           onIncorrectAnswer,
