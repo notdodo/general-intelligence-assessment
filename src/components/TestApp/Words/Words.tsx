@@ -6,6 +6,7 @@ import { Card, CardHeader, CardTitle, CardFooter } from "@components/ui/card";
 import { categories as categoriesEn } from "./data-en";
 import { categories as categoriesPl } from "./data-pl";
 import { categories as categoriesEs } from "./data-es";
+import { categories as categoriesIt } from "./data-it";
 import React, { useContext } from "react";
 import { LocaleContext } from "@/contexts/LocaleContext";
 import { i18n, type Locale } from "@/i18n";
@@ -62,7 +63,9 @@ function generateQuestion(locale: Locale) {
   const categories =
     locale !== "pl"
       ? locale !== "es"
-        ? categoriesEn
+        ? locale !== "it"
+          ? categoriesEn
+          : categoriesIt
         : categoriesEs
       : categoriesPl;
 
